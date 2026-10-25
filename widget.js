@@ -14,7 +14,7 @@
     const description =
       script.dataset.description ||
       "We make furniture assembly simple with reliable service and professional care.";
-    const ctaLabel = script.dataset.label || "Explore brand";
+    const ctaLabel = script.dataset.label || "Book Installation";
     const logoUrl = script.dataset.logo || "";
   
     // Validate the destination URL.
