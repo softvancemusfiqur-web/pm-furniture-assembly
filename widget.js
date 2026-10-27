@@ -272,7 +272,7 @@
         script.dataset.description ||
         "Looking for professional installation help? Our team can help you get your new product assembled and installed.";
     const ctaLabel = script.dataset.label || "Book Installation";
-    const logoUrl = script.dataset.logo || "";
+    const logoUrl = script.dataset.logo || "https://cdn.prod.website-files.com/6979843437a22120b32233f6/6982dfbd3b49ce063143c936_586c90413_PMLogo%20(1).webp";
     const variant = (script.dataset.variant || "classic").toLowerCase();
 
     let destinationUrl;
@@ -417,7 +417,7 @@
   
       /* Variant 2: Soft blue */
       .card[data-variant="blue"] {
-        background: #cfe1ff;
+        background: rgba(10, 110, 255, 0.2);
         border-color: #b6c8e2;
       }
   
