@@ -302,6 +302,7 @@
         display: block;
         width: 100%;
         max-width: 100%;
+        container-type: inline-size;
         font-family: Arial, Helvetica, sans-serif;
         color: #202124;
         box-sizing: border-box;
@@ -485,6 +486,13 @@
   
         .pmfa-widget-description {
           font-size: 12px;
+        }
+      }
+
+      @container (max-width: 330px) {
+        .pmfa-widget-card {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
   
