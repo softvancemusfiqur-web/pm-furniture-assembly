@@ -35,7 +35,7 @@
 
 //     // Insert the widget exactly where the script is placed.
 //     const host = document.createElement("div");
-//     host.className = "pm-brand-widget";
+//     host.className = "pmfa-widget-host";
 //     host.style.cssText = "display:block;width:100%;max-width:100%;";
 
 //     script.insertAdjacentElement("beforebegin", host);
@@ -59,7 +59,7 @@
 //         box-sizing: border-box;
 //       }
 
-//       .card {
+//       .pmfa-widget-card {
 //         display: flex;
 //         align-items: center;
 //         gap: 14px;
@@ -76,17 +76,17 @@
 //                     box-shadow 160ms ease;
 //       }
 
-//       .card:hover {
+//       .pmfa-widget-card:hover {
 //         border-color: #8f98a5;
 //         box-shadow: 0 3px 12px rgba(24, 39, 58, 0.08);
 //       }
 
-//       .card:focus-visible {
+//       .pmfa-widget-card:focus-visible {
 //         outline: 3px solid #2765c7;
 //         outline-offset: 3px;
 //       }
 
-//       .logo {
+//       .pmfa-widget-logo {
 //         display: flex;
 //         flex: 0 0 64px;
 //         align-items: center;
@@ -102,14 +102,14 @@
 //         line-height: 1;
 //       }
 
-//       .logo img {
+//       .pmfa-widget-logo img {
 //         display: block;
 //         width: 100%;
 //         height: 100%;
 //         object-fit: contain;
 //       }
 
-//       .copy {
+//       .pmfa-widget-copy {
 //         display: flex;
 //         flex: 1 1 auto;
 //         flex-direction: column;
@@ -118,7 +118,7 @@
 //         gap: 5px;
 //       }
 
-//       .title {
+//       .pmfa-widget-title {
 //         display: block;
 //         max-width: 100%;
 //         color: #17191d;
@@ -128,7 +128,7 @@
 //         overflow-wrap: anywhere;
 //       }
 
-//       .description {
+//       .pmfa-widget-description {
 //         display: block;
 //         max-width: 100%;
 //         color: #526b91;
@@ -138,7 +138,7 @@
 //         overflow-wrap: anywhere;
 //       }
 
-//       .cta {
+//       .pmfa-widget-cta {
 //         display: inline-flex;
 //         align-items: center;
 //         gap: 6px;
@@ -149,37 +149,37 @@
 //         line-height: 1.4;
 //       }
 
-//       .arrow {
+//       .pmfa-widget-arrow {
 //         display: inline-block;
 //         font-size: 13px;
 //         line-height: 1;
 //       }
 
 //       @media (max-width: 420px) {
-//         .card {
+//         .pmfa-widget-card {
 //           gap: 10px;
 //           padding: 11px;
 //           border-radius: 10px;
 //         }
 
-//         .logo {
+//         .pmfa-widget-logo {
 //           flex-basis: 54px;
 //           width: 54px;
 //           height: 54px;
 //           font-size: 16px;
 //         }
 
-//         .title {
+//         .pmfa-widget-title {
 //           font-size: 14px;
 //         }
 
-//         .description {
+//         .pmfa-widget-description {
 //           font-size: 12px;
 //         }
 //       }
 
 //       @media (prefers-reduced-motion: reduce) {
-//         .card {
+//         .pmfa-widget-card {
 //           transition: none;
 //         }
 //       }
@@ -187,7 +187,7 @@
 
 //     const link = document.createElement("a");
 
-//     link.className = "card";
+//     link.className = "pmfa-widget-card";
 //     link.href = destinationUrl.href;
 //     link.target = "_blank";
 //     link.rel = "noopener noreferrer";
@@ -197,7 +197,7 @@
 //     );
 
 //     const logo = document.createElement("span");
-//     logo.className = "logo";
+//     logo.className = "pmfa-widget-logo";
 //     logo.setAttribute("aria-hidden", "true");
 
 //     if (logoUrl) {
@@ -231,22 +231,22 @@
 //     }
 
 //     const copy = document.createElement("span");
-//     copy.className = "copy";
+//     copy.className = "pmfa-widget-copy";
 
 //     const heading = document.createElement("span");
-//     heading.className = "title";
+//     heading.className = "pmfa-widget-title";
 //     heading.textContent = title;
 
 //     const summary = document.createElement("span");
-//     summary.className = "description";
+//     summary.className = "pmfa-widget-description";
 //     summary.textContent = description;
 
 //     const cta = document.createElement("span");
-//     cta.className = "cta";
+//     cta.className = "pmfa-widget-cta";
 //     cta.append(document.createTextNode(ctaLabel));
 
 //     const arrow = document.createElement("span");
-//     arrow.className = "arrow";
+//     arrow.className = "pmfa-widget-arrow";
 //     arrow.setAttribute("aria-hidden", "true");
 //     arrow.textContent = "↗";
 
@@ -289,7 +289,7 @@
 
     // Insert the widget where the script is placed.
     const host = document.createElement("div");
-    host.className = "pm-brand-widget";
+    host.className = "pmfa-widget-host";
     host.style.cssText = "display:block;width:100%;max-width:100%;";
     script.insertAdjacentElement("beforebegin", host);
 
@@ -311,7 +311,7 @@
         box-sizing: border-box;
       }
   
-      .card {
+      .pmfa-widget-card {
         display: flex;
         align-items: center;
         gap: 14px;
@@ -330,17 +330,17 @@
           box-shadow 160ms ease;
       }
   
-      .card:hover {
+      .pmfa-widget-card:hover {
         border-color: #8f98a5;
         box-shadow: 0 3px 12px rgba(24, 39, 58, 0.08);
       }
   
-      .card:focus-visible {
+      .pmfa-widget-card:focus-visible {
         outline: 3px solid #2765c7;
         outline-offset: 3px;
       }
   
-      .logo {
+      .pmfa-widget-logo {
         display: flex;
         flex: 0 0 64px;
         align-items: center;
@@ -356,14 +356,14 @@
         line-height: 1;
       }
   
-      .logo img {
+      .pmfa-widget-logo img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
   
-      .copy {
+      .pmfa-widget-copy {
         display: flex;
         flex: 1 1 auto;
         flex-direction: column;
@@ -372,7 +372,7 @@
         gap: 5px;
       }
   
-      .title {
+      .pmfa-widget-title {
         display: block;
         max-width: 100%;
         color: #17191d;
@@ -382,7 +382,7 @@
         overflow-wrap: anywhere;
       }
   
-      .description {
+      .pmfa-widget-description {
         display: block;
         max-width: 100%;
         color: #526b91;
@@ -392,7 +392,7 @@
         overflow-wrap: anywhere;
       }
   
-      .cta {
+      .pmfa-widget-cta {
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -403,93 +403,93 @@
         line-height: 1.4;
       }
   
-      .arrow {
+      .pmfa-widget-arrow {
         display: inline-block;
         font-size: 13px;
         line-height: 1;
       }
   
       /* Variant 1: Classic white */
-      .card[data-variant="classic"] {
+      .pmfa-widget-card[data-variant="classic"] {
         background: #ffffff;
         border-color: #bcc2cb;
       }
   
       /* Variant 2: Soft blue */
-      .card[data-variant="blue"] {
+      .pmfa-widget-card[data-variant="blue"] {
         background: rgba(10, 110, 255, 0.2);
         border-color: #b6c8e2;
       }
   
-      .card[data-variant="blue"]:hover {
+      .pmfa-widget-card[data-variant="blue"]:hover {
         background: #c2d8fc;
       }
   
       /* Variant 3: Pale blue */
-      .card[data-variant="pale-blue"] {
+      .pmfa-widget-card[data-variant="pale-blue"] {
         background: #edf7fc;
         border-color: #bccbd3;
       }
   
-      .card[data-variant="pale-blue"]:hover {
+      .pmfa-widget-card[data-variant="pale-blue"]:hover {
         background: #e2f1f8;
       }
   
       /* Variant 4: Warm neutral */
-      .card[data-variant="warm"] {
+      .pmfa-widget-card[data-variant="warm"] {
         background: #f0ece8;
         border-color: #c9c1ba;
       }
   
-      .card[data-variant="warm"]:hover {
+      .pmfa-widget-card[data-variant="warm"]:hover {
         background: #e8e2dc;
       }
   
       /* Variant 5: Light indigo */
-      .card[data-variant="indigo"] {
+      .pmfa-widget-card[data-variant="indigo"] {
         background: #e6efff;
         border-color: #bccbe4;
       }
   
-      .card[data-variant="indigo"]:hover {
+      .pmfa-widget-card[data-variant="indigo"]:hover {
         background: #dce8fc;
       }
   
       /* Variant 6: Cool gray */
-      .card[data-variant="gray"] {
+      .pmfa-widget-card[data-variant="gray"] {
         background: #f0f0f3;
         border-color: #c7c8ce;
       }
   
-      .card[data-variant="gray"]:hover {
+      .pmfa-widget-card[data-variant="gray"]:hover {
         background: #e7e7ec;
       }
   
       @media (max-width: 420px) {
-        .card {
+        .pmfa-widget-card {
           gap: 10px;
           padding: 11px;
           border-radius: 10px;
         }
   
-        .logo {
+        .pmfa-widget-logo {
           flex-basis: 54px;
           width: 54px;
           height: 54px;
           font-size: 16px;
         }
   
-        .title {
+        .pmfa-widget-title {
           font-size: 14px;
         }
   
-        .description {
+        .pmfa-widget-description {
           font-size: 12px;
         }
       }
   
       @media (prefers-reduced-motion: reduce) {
-        .card {
+        .pmfa-widget-card {
           transition: none;
         }
       }
@@ -497,7 +497,7 @@
 
     // Create the clickable card.
     const link = document.createElement("a");
-    link.className = "card";
+    link.className = "pmfa-widget-card";
 
     const allowedVariants = [
         "classic",
@@ -519,7 +519,7 @@
 
     // Create the logo.
     const logo = document.createElement("span");
-    logo.className = "logo";
+    logo.className = "pmfa-widget-logo";
     logo.setAttribute("aria-hidden", "true");
 
     if (logoUrl) {
@@ -555,22 +555,22 @@
 
     // Create the text content.
     const copy = document.createElement("span");
-    copy.className = "copy";
+    copy.className = "pmfa-widget-copy";
 
     const heading = document.createElement("span");
-    heading.className = "title";
+    heading.className = "pmfa-widget-title";
     heading.textContent = title;
 
     const summary = document.createElement("span");
-    summary.className = "description";
+    summary.className = "pmfa-widget-description";
     summary.textContent = description;
 
     const cta = document.createElement("span");
-    cta.className = "cta";
+    cta.className = "pmfa-widget-cta";
     cta.append(document.createTextNode(ctaLabel));
 
     const arrow = document.createElement("span");
-    arrow.className = "arrow";
+    arrow.className = "pmfa-widget-arrow";
     arrow.setAttribute("aria-hidden", "true");
     arrow.textContent = "↗";
 
